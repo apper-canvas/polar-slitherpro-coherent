@@ -101,6 +101,8 @@ const MainFeature = () => {
           break
         case 'right':
           head.x += 1
+case 'right':
+          head.x += 1
           break
         default:
           break
@@ -108,16 +110,14 @@ const MainFeature = () => {
 
       // Check wall collision
       if (head.x < 0 || head.x >= GRID_SIZE || head.y < 0 || head.y >= GRID_SIZE) {
-        gameOver()
         return currentSnake
       }
 
       // Check self collision
       if (currentSnake.some(segment => segment.x === head.x && segment.y === head.y)) {
-        gameOver()
+        setTimeout(() => gameOver(), 0)
         return currentSnake
       }
-
       const newSnake = [head, ...currentSnake]
 
       // Check food collision
@@ -130,10 +130,10 @@ const MainFeature = () => {
           ...prev,
           score: newScore,
           level: newLevel
-        }))
+}))
         
         setGameSpeed(newSpeed)
-        setFood(generateFood())
+        setTimeout(() => setFood(generateFood()), 0)
         
         toast.success(`+${food.points} points!`, {
           position: "top-center",
