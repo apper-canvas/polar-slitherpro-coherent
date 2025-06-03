@@ -11,13 +11,9 @@
     @apply antialiased;
     font-feature-settings: 'cv11', 'ss01';
     font-variation-settings: 'opsz' 32;
-  }
-
-  * {
-    @apply border-border;
+font-variation-settings: 'opsz' 32;
   }
 }
-
 @layer utilities {
   .scrollbar-hide {
     -ms-overflow-style: none;
