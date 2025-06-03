@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "segments": [
+      { "x": 10, "y": 10 }
+    ],
+    "direction": "right",
+    "speed": 150,
+    "length": 1,
+    "isAlive": true,
+    "headPosition": { "x": 10, "y": 10 },
+    "tailPosition": { "x": 10, "y": 10 },
+    "movementHistory": [
+      { "x": 10, "y": 10, "direction": "right", "timestamp": "2024-01-01T00:00:00.000Z" }
+    ],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]
